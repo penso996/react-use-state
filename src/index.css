@@ -38,6 +38,11 @@ main li {
     cursor: pointer;
 }
 
+.css-active {
+    background-color: rgba(255, 193, 7, 255);
+    color: black;
+}
+
 main div {
     border: solid 1px lightgrey;
     border-radius: 5px;

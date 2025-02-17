@@ -35,6 +35,7 @@ main li {
     color: white;
     list-style: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 main div {

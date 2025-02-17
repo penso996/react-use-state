@@ -19,16 +19,27 @@ header h1 {
 }
 
 /* MAIN (Main.jsx) */
+main {
+    padding: 40px;
+}
+
 main ul {
     display: flex;
-    align-items: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
 }
 
 main li {
     background-color: rgba(13, 110, 253, 255);
     padding: 1em;
     color: white;
-    margin: 10px;
     list-style: none;
     border-radius: 5px;
+}
+
+main div {
+    border: solid 1px lightgrey;
+    border-radius: 5px;
+    padding: 1em;
+    width: 50%;
 }

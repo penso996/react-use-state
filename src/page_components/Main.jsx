@@ -41,6 +41,16 @@ export default function Main() {
                     <li key={language.id}>{language.title}</li>
                 ))}
             </ul>
+            <div>
+                {/* box title */}
+                <h3>
+                    {languages[0].title}
+                </h3>
+                {/* box description */}
+                <p>
+                    {languages[0].description}
+                </p>
+            </div>
         </main>
     );
 }

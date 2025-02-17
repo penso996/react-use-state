@@ -36,7 +36,7 @@ export default function Main() {
         }
     ];
 
-    const [isActive, setIsActive] = useState(languages[0]);
+    const [isActive, setIsActive] = useState(null);
 
     return (
         <main>
@@ -49,11 +49,11 @@ export default function Main() {
             <div>
                 {/* box title */}
                 <h3>
-                    {isActive.title}
+                    {isActive ? isActive.title : "Scegli un linguaggio"}
                 </h3>
                 {/* box description */}
                 <p>
-                    {isActive.description}
+                    {isActive ? isActive.description : "Descrizione del linguaggio selezionato"}
                 </p>
             </div>
 

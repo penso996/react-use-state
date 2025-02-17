@@ -1,4 +1,4 @@
-// Header.jsx
+// Main.jsx
 export default function Main() {
     return (
         <main>

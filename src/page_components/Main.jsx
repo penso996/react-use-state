@@ -42,7 +42,9 @@ export default function Main() {
         <main>
             <ul>
                 {languages.map((language) => (
-                    <li key={language.id} onClick={() => setIsActive(language)}>{language.title}</li>
+                    <li key={language.id}
+                        className={`${isActive && isActive.id === language.id ? "css-active" : ""}`}
+                        onClick={() => setIsActive(language)}>{language.title}</li>
                 ))}
             </ul>
 

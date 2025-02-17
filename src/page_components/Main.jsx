@@ -1,4 +1,6 @@
 // Main.jsx
+import { useState } from "react";
+
 export default function Main() {
 
     const languages = [
@@ -34,23 +36,27 @@ export default function Main() {
         }
     ];
 
+    const [isActive, setIsActive] = useState(languages[0]);
+
     return (
         <main>
             <ul>
                 {languages.map((language) => (
-                    <li key={language.id}>{language.title}</li>
+                    <li key={language.id} onClick={() => setIsActive(language)}>{language.title}</li>
                 ))}
             </ul>
+
             <div>
                 {/* box title */}
                 <h3>
-                    {languages[0].title}
+                    {isActive.title}
                 </h3>
                 {/* box description */}
                 <p>
-                    {languages[0].description}
+                    {isActive.description}
                 </p>
             </div>
+
         </main>
     );
 }
